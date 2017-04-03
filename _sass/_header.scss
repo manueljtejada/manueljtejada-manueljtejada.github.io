@@ -1,0 +1,41 @@
+.jumbotron {
+  background: url('/assets/img/jumbotron.png') no-repeat left top;
+  background-size: 100%;
+  color: $white;
+  height: 656px;
+  padding-top: 200px;
+  position: relative;
+  text-align: center;
+
+  h1 {
+    font-size: 54px;
+    font-weight: 700;
+  }
+
+  .lead {
+    font-size: 24px;
+    height: 1.8em;
+  }
+
+  .arrow-down {
+    bottom: 50px;
+    color: $white;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: bottom .3s;
+
+    .fa {
+      text-shadow: 2px 0 4px 0 fade-out($black, .5);
+    }
+
+    &:hover {
+      bottom: 55px;
+      transition: bottom .3s;
+    }
+  }
+}
+
+.navbar {
+  font-family: $font-family-sans-serif;
+}

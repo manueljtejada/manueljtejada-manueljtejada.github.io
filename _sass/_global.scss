@@ -1,0 +1,26 @@
+// Buttons
+
+.btn {
+  font-family: $font-family-sans-serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.btn-rounded {
+  border-radius: 50px;
+}
+
+
+// Typography
+
+.page-heading {
+  font-weight: 700;
+}
+
+.post-link {
+  color: $gray-dark;
+}
+
+.text-muted > a {
+  color: inherit;
+}
