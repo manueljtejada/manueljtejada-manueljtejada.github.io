@@ -1,0 +1,20 @@
+{
+  "name": "manueljtejada.github.io",
+  "homepage": "https://github.com/manueljtejada/manueljtejada-manueljtejada.github.io",
+  "authors": [
+    "manueljtejada <manute32@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6"
+  }
+}
