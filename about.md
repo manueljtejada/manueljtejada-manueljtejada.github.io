@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-### I'm a Web Designer and Front-End Web Developer from the Dominican Republic.
+## I'm a Web Designer and Front-End Web Developer from the Dominican Republic.
 
 I have 4+ years of experience in remote work, UI/UX design and front-end web development.
 

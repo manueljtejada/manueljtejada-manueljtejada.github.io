@@ -29,3 +29,19 @@
     }
   }
 }
+
+
+// About page
+
+.about {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 700;
+  }
+  p {
+    color: darken($gray-light, 5%);
+    line-height: 2.15em;
+  }
+}
