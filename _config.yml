@@ -1,26 +1,32 @@
+---
 title: Manuel J. Tejada
-email: manute32@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Web Designer & Front-End Web Developer from the Dominican Republic
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://manueljtejada.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: manueljtejada
-github_username:  manueljtejada
-
+timezone: UTC
 collections:
   portfolio:
     title: Portfolio
     output: false
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+email: manute32@gmail.com
+description: 'Web Designer & Front-End Web Developer from the Dominican Republic
 
-# Build settings
+'
+baseurl: ''
+url: http://manueljtejada.com
+twitter_username: manueljtejada
+github_username: manueljtejada
 markdown: kramdown
 permalink: date
 gems:
-  - jekyll-feed
+- jekyll-feed
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - vendor
-  - bower_components
+- Gemfile
+- Gemfile.lock
+- vendor
+- bower_components
 sass:
-    sass_dir: _sass
+  sass_dir: _sass

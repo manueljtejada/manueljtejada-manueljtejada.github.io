@@ -1,7 +1,7 @@
 ---
-layout: about
 title: About
-permalink: /about/
+permalink: "/about/"
+layout: about
 ---
 
 ## I'm a Web Designer and Front-End Web Developer from the Dominican Republic.
