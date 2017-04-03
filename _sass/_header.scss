@@ -49,4 +49,8 @@
 .navbar {
   font-family: $font-family-sans-serif;
   position: absolute !important;
+
+  &.bg-inverse {
+    background: $dark-blue !important;
+  }
 }
