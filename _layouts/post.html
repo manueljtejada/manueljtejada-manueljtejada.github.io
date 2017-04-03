@@ -1,14 +1,39 @@
 ---
-layout: default
+layout: default-darker
 ---
 
-<div class="container my-5">
-  <div class="row">
-    <div class="col-sm-3">
-      <img src="/assets/img/manueljtejada.jpg" class="img-fluid img-thumbnail" alt="{{ site.title }}">
+<article class="post container my-5">
+  <header class="d-flex justify-content-between">
+    <h1 class="post-title">
+      <b>{{ page.title }}</b>
+    </h1>
+    <div>
+      <a href="{{ page.link }}" target="_blank" class="btn btn-secondary btn-rounded">
+        View Site &raquo;
+      </a>
     </div>
-    <div class="col-sm-9">
-      {{ content }}
-    </div>
+  </header>
+
+  <div class="post-intro">
+    {{ page.intro }}
   </div>
-</div>
+
+  <aside class="byline row my-5">
+    <div class="col">
+      <h6>Services</h6>
+      {{ page.services }}
+    </div>
+    <div class="col">
+      <h6>Built with</h6>
+      {{ page.tech }}
+    </div>
+    <div class="col">
+      <h6>Date</h6>
+      {{ page.date | date: "%Y" }}
+    </div>
+  </aside>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
