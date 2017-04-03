@@ -10,16 +10,18 @@ layout: default
     <h1 class="page-heading">Latest Work</h1>
 
     <div class="row my-5">
-      {% for item in site.portfolio %}
+      {% for post in site.posts %}
         <div class="col-sm-4">
-          <img src="{{ item.image_path }}" alt="{{ item.title }}" class="img-fluid mb-4">
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            <img src="{{ post.image_path }}" alt="{{ post.title }}" class="img-fluid mb-4">
+          </a>
           <h4>
-            <a class="post-link" href="{{ item.url | prepend: site.baseurl }}">
-              <b>{{ item.title | escape }}</b>
+            <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
+              <b>{{ post.title | escape }}</b>
             </a>
           </h4>
           <div class="text-sm text-muted">
-            <a href="{{ item.link }}" target="_blank">{{ item.link }}</a>
+            <a href="{{ post.link }}" target="_blank">{{ post.link }}</a>
           </div>
         </div>
       {% endfor %}
