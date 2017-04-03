@@ -1,20 +1,30 @@
 .jumbotron {
-  background: url('/assets/img/jumbotron.png') no-repeat left top;
-  background-size: 100%;
+  background: url('/assets/img/jumbotron.jpg') no-repeat left top;
+  background-size: cover;
   color: $white;
-  height: 656px;
-  padding-top: 200px;
+  height: 450px;
+  padding-top: 120px;
   position: relative;
   text-align: center;
 
-  h1 {
-    font-size: 54px;
-    font-weight: 700;
+  @include media-breakpoint-up(sm) {
+    h1 {
+      font-size: 54px;
+      font-weight: 700;
+    }
+
+    .lead {
+      font-size: 24px;
+      height: 1.8em;
+    }
   }
 
-  .lead {
-    font-size: 24px;
-    height: 1.8em;
+  &.short {
+    height: 250px;
+  }
+
+  h1 {
+    font-weight: 700;
   }
 
   .arrow-down {
@@ -38,4 +48,5 @@
 
 .navbar {
   font-family: $font-family-sans-serif;
+  position: absolute !important;
 }
