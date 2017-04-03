@@ -8,8 +8,8 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">
-        <img src="assets/img/mjt-logo.png" height="50" alt="{{ site.title }}">
+      <a class="navbar-brand" href="{{ site.url }}">
+        <img src="/assets/img/mjt-logo.png" height="50" alt="{{ site.title }}">
       </a>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -21,6 +21,9 @@
             </li>
             {% endif %}
           {% endfor %}
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:manute32@gmail.com">Get in touch</a>
+          </li>
         </ul>
       </div>
     </div>
